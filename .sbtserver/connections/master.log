@@ -1,0 +1,19 @@
+New log file opened at Mon Jul 17 15:03:14 IRDT 2017 by 15403@feyzi-linux
+Taking next connection to: 37837
+New client attempting to connect on port: 58922-37837
+  Address = /127.0.1.1:37837
+This client on port 58922 has uuid 4756ff51-446c-49fb-8bd2-4afb64bddd6c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-4756ff51-446c-49fb-8bd2-4afb64bddd6c
+Taking next connection to: 37837
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 37837
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 37837
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 15403@feyzi-linux logs at Mon Jul 17 15:12:21 IRDT 2017, goodbye.
