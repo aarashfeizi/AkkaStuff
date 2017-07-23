@@ -31,14 +31,15 @@ object Json {
 
 
         val connectionFlow: Flow[HttpRequest, HttpResponse, Future[Http.OutgoingConnection]] =
-          Http().outgoingConnection("www.sharif.ir")
+          Http().outgoingConnection("beta.ptp")
 
         def dispatchRequest(request: HttpRequest): Future[HttpResponse] =
           Source.single(request)
             .via(connectionFlow)
             .runWith(Sink.head)
 
-        val request = dispatchRequest(HttpRequest(uri = "/170/"))
+//        val request = dispatchRequest(HttpRequest(uri = "/about"))
+        val request = dispatchRequest(HttpRequest(uri = "/searchdest?search_text=Tehran"))
 
 //        HttpResponse(entity = Await.result(request, 2 seconds))
         request map { r =>
